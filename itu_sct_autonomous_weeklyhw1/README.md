@@ -1,28 +1,10 @@
 ### Project Summary
 
-This project consists of three primary modules: **Point Structure**, **Calculator**, and **Matrix**, each designed to provide specific mathematical functionalities in C++.
+This project consists of three primary modules: **Calculator**, **Matrix**, and **Point Structure**, each designed to provide specific mathematical functionalities in C++.
 
 ---
 
-### **1. Point Structure**
-
-#### **Objective**
-The Point Structure module is designed to manage and manipulate 3D points while categorizing them into spatial regions based on their coordinates.
-
-#### **Features**
-- **Point3D Structure**: Represents a point in 3D space with `x`, `y`, and `z` coordinates.
-- **Region Enumeration**: Classifies points into distinct regions based on the signs of their coordinates, with an additional `None` category for undefined regions.
-- **Core Functions**:
-  - Compute the distance of a point from the origin.
-  - Calculate the distance between two points.
-  - Compare the distances of two points from the origin.
-  - Identify the region a point belongs to.
-  - Determine if two points belong to the same region.
-  - Display the coordinates of a point and its region.
-
----
-
-### **2. Calculator**
+### **1. Calculator**
 
 #### **Objective**
 This module provides a flexible calculator capable of performing various arithmetic operations on numerical data, leveraging templates for type flexibility.
@@ -38,7 +20,7 @@ This module provides a flexible calculator capable of performing various arithme
 
 ---
 
-### **3. Matrix Module**
+### **2. Matrix Module**
 
 #### **Objective**
 The Matrix module provides a comprehensive set of tools for creating, manipulating, and performing mathematical operations on matrices.
@@ -61,6 +43,24 @@ The Matrix module provides a comprehensive set of tools for creating, manipulati
 
 ---
 
+### **3. Point Structure**
+
+#### **Objective**
+The Point Structure module is designed to manage and manipulate 3D points while categorizing them into spatial regions based on their coordinates.
+
+#### **Features**
+- **Point3D Structure**: Represents a point in 3D space with `x`, `y`, and `z` coordinates.
+- **Region Enumeration**: Classifies points into distinct regions based on the signs of their coordinates, with an additional `None` category for undefined regions.
+- **Core Functions**:
+  - Compute the distance of a point from the origin.
+  - Calculate the distance between two points.
+  - Compare the distances of two points from the origin.
+  - Identify the region a point belongs to.
+  - Determine if two points belong to the same region.
+  - Display the coordinates of a point and its region.
+
+---
+
 ### **Integration of Modules**
 
 1. **Point and Region Analysis**:
@@ -78,12 +78,11 @@ The Matrix module provides a comprehensive set of tools for creating, manipulati
 
 ### Example Use Cases
 
-- Calculate the **distance** between two points in 3D space and determine if they belong to the same region.
 - Utilize the **Calculator** module for numerical computations involving scalar values derived from points or matrices.
 - Perform **matrix operations**, such as finding the determinant, trace, or inverse of a matrix constructed from 3D point data or other numerical inputs.
+- Calculate the **distance** between two points in 3D space and determine if they belong to the same region.
 
 ---
 
 This modular design ensures flexibility and scalability for mathematical applications, combining geometric, arithmetic, and linear algebra capabilities seamlessly in C++.
-
 

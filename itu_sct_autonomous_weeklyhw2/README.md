@@ -89,6 +89,37 @@ if (auto lockedWeakPtr = weakPtr1.lock()) {
 
 ---
 
+## Variable Type Analysis
+
+This section demonstrates the use of various C++ variable types and their memory details, including size, pointer size, and range of values.
+
+### Key Features:
+- Uses `std::numeric_limits` to extract the minimum and maximum values for different data types.
+- Explores the memory size and pointer size for common C++ data types like `int`, `float`, `char`, and their variations.
+- Outputs results in a formatted table for clarity.
+
+### Example Code:
+```cpp
+std::cout << std::setw(25) << std::left << "Type";
+std::cout << std::setw(10) << "Size";
+std::cout << std::setw(10) << "Ptr Size";
+std::cout << std::setw(25) << "Min Value";
+std::cout << std::setw(20) << "Max Value" << std::endl;
+
+// Example Output for int
+std::cout << std::setw(25) << std::left << "int";
+std::cout << std::setw(10) << sizeof(intVar);
+std::cout << std::setw(10) << sizeof(intPtr);
+std::cout << std::setw(25) << std::numeric_limits<int>::lowest();
+std::cout << std::setw(20) << std::numeric_limits<int>::max() << std::endl;
+```
+
+### Insights:
+- Demonstrates the wide range of variable types in C++, including signed, unsigned, and platform-specific types like `int32_t` and `int64_t`.
+- Highlights the importance of understanding type sizes for efficient memory management.
+
+---
+
 ## Benefits of Using Smart Pointers
 1. **Automatic Memory Management**: Eliminates the need for manual `delete` calls.
 2. **Exception Safety**: Prevents memory leaks during exceptions.
@@ -123,11 +154,4 @@ weakPtr1 address: 0x0
 ---
 
 This project highlights the importance of modern memory management techniques in C++ and demonstrates how smart pointers can simplify complex memory handling scenarios.
-
-Variable Type Analysis in C++
-
-Overview
-
-This project excludes unused variable types, such as char8_t, bool, int8_t, and uint8_t. It focuses on commonly used character, integer, and floating-point types, providing insights into their memory size, value ranges, and pointer sizes. The formatted table output helps beginners easily compare these properties across different types, improving their understanding of memory management and variable usage in C++.
-
 

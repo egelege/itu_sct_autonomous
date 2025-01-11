@@ -20,10 +20,10 @@ This module provides a flexible calculator capable of performing various arithme
 
 ---
 
-### **2. Matrix Module**
+### **2. Matrix Calculator**
 
 #### **Objective**
-The Matrix module provides a comprehensive set of tools for creating, manipulating, and performing mathematical operations on matrices.
+The Matrix calculator provides a comprehensive set of tools for creating, manipulating, and performing mathematical operations on matrices.
 
 #### **Features**
 - **Matrix Creation**:

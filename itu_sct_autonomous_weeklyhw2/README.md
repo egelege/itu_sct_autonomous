@@ -128,64 +128,6 @@ Variable Type Analysis in C++
 
 Overview
 
-This project is a simple C++ program designed to explore the properties of variables in C++. It displays key characteristics of various variable types, including their size in memory, minimum and maximum values, and the size of their pointers. The project aims to provide beginners with a clear understanding of how variables work in C++.
-
-Usage
-
-Clone the repository.
-
-Open the project in your preferred C++ IDE.
-
-Compile and run the program using CMake or the IDE's built-in compiler.
-
-Variables Used
-
-Character Types
-
-char
-
-unsigned char
-
-signed char
-
-wchar_t
-
-char16_t
-
-char32_t
-
-Integer Types
-
-int
-
-unsigned int
-
-short int
-
-long int
-
-long long int
-
-unsigned short int
-
-unsigned long int
-
-unsigned long long int
-
-int32_t
-
-int64_t
-
-Floating-Point Types
-
-float
-
-double
-
-long double
-
-Summary
-
 This project excludes unused variable types, such as char8_t, bool, int8_t, and uint8_t. It focuses on commonly used character, integer, and floating-point types, providing insights into their memory size, value ranges, and pointer sizes. The formatted table output helps beginners easily compare these properties across different types, improving their understanding of memory management and variable usage in C++.
 
 

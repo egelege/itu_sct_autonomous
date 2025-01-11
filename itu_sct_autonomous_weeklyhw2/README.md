@@ -89,37 +89,6 @@ if (auto lockedWeakPtr = weakPtr1.lock()) {
 
 ---
 
-## Variable Type Analysis
-
-This section demonstrates the use of various C++ variable types and their memory details, including size, pointer size, and range of values.
-
-### Key Features:
-- Uses `std::numeric_limits` to extract the minimum and maximum values for different data types.
-- Explores the memory size and pointer size for common C++ data types like `int`, `float`, `char`, and their variations.
-- Outputs results in a formatted table for clarity.
-
-### Example Code:
-```cpp
-std::cout << std::setw(25) << std::left << "Type";
-std::cout << std::setw(10) << "Size";
-std::cout << std::setw(10) << "Ptr Size";
-std::cout << std::setw(25) << "Min Value";
-std::cout << std::setw(20) << "Max Value" << std::endl;
-
-// Example Output for int
-std::cout << std::setw(25) << std::left << "int";
-std::cout << std::setw(10) << sizeof(intVar);
-std::cout << std::setw(10) << sizeof(intPtr);
-std::cout << std::setw(25) << std::numeric_limits<int>::lowest();
-std::cout << std::setw(20) << std::numeric_limits<int>::max() << std::endl;
-```
-
-### Insights:
-- Demonstrates the wide range of variable types in C++, including signed, unsigned, and platform-specific types like `int32_t` and `int64_t`.
-- Highlights the importance of understanding type sizes for efficient memory management.
-
----
-
 ## Benefits of Using Smart Pointers
 1. **Automatic Memory Management**: Eliminates the need for manual `delete` calls.
 2. **Exception Safety**: Prevents memory leaks during exceptions.
@@ -154,4 +123,62 @@ weakPtr1 address: 0x0
 ---
 
 This project highlights the importance of modern memory management techniques in C++ and demonstrates how smart pointers can simplify complex memory handling scenarios.
+
+## Variable Type Analysis
+
+This section demonstrates the use of various C++ variable types and their memory details, including size, pointer size, and range of values. Additionally, it includes examples of specific variables used in the program.
+
+### Key Features:
+- Uses `std::numeric_limits` to extract the minimum and maximum values for different data types.
+- Explores the memory size and pointer size for common C++ data types like `int`, `float`, `char`, and their variations.
+- Outputs results in a formatted table for clarity.
+
+### Variables Used:
+
+#### **Character Types:**
+- `char` (Signed character type)
+- `unsigned char` (Unsigned character type)
+- `signed char` (Explicitly signed character type)
+- `wchar_t` (Wide character type)
+- `char16_t` (16-bit character type)
+- `char32_t` (32-bit character type)
+
+#### **Integer Types:**
+- `int` (Signed integer type)
+- `unsigned int` (Unsigned integer type)
+- `short int` (Short signed integer type)
+- `long int` (Long signed integer type)
+- `long long int` (Long long signed integer type)
+- `unsigned short int` (Unsigned short integer type)
+- `unsigned long int` (Unsigned long integer type)
+- `unsigned long long int` (Unsigned long long integer type)
+- `int32_t` (32-bit signed integer type)
+- `int64_t` (64-bit signed integer type)
+
+#### **Floating-Point Types:**
+- `float` (Single-precision floating-point type)
+- `double` (Double-precision floating-point type)
+- `long double` (Extended-precision floating-point type)
+
+### Example Code:
+```cpp
+std::cout << std::setw(25) << std::left << "Type";
+std::cout << std::setw(10) << "Size";
+std::cout << std::setw(10) << "Ptr Size";
+std::cout << std::setw(25) << "Min Value";
+std::cout << std::setw(20) << "Max Value" << std::endl;
+
+// Example Output for int
+std::cout << std::setw(25) << std::left << "int";
+std::cout << std::setw(10) << sizeof(intVar);
+std::cout << std::setw(10) << sizeof(intPtr);
+std::cout << std::setw(25) << std::numeric_limits<int>::lowest();
+std::cout << std::setw(20) << std::numeric_limits<int>::max() << std::endl;
+```
+
+### Insights:
+- Demonstrates the wide range of variable types in C++, including signed, unsigned, and platform-specific types like `int32_t` and `int64_t`.
+- Highlights the importance of understanding type sizes for efficient memory management.
+
+
 

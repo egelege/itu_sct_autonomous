@@ -13,7 +13,6 @@ Restaurant Bot is an innovative tool designed to generate dynamic, balanced menu
   - [Composition](#composition)
   - [Aggregation](#aggregation)
 - [Object-Oriented Concepts](#object-oriented-concepts)
-- [JSON File Handling](#json-file-handling)
 - [Taste Balance Functionality](#taste-balance-functionality)
 - [Conclusion](#conclusion)
 
@@ -65,18 +64,6 @@ Restaurant Bot is built to help users create menus that suit their taste prefere
 
 - **Aggregation:**  
   A specialized form of association where the component parts can exist independently. In this project, the overall taste balance and total cost are aggregated within the `Menu`, yet are standalone attributes.
-
----
-
-## JSON File Handling
-
-This project utilizes the RapidJSON library to work with a JSON file named `menu.json`. The following headers are integral to this process:
-
-- **`document.h`:** For parsing JSON documents.
-- **`writer.h`:** For generating JSON data.
-- **`stringbuffer.h`:** For managing string buffers.
-
-These components enable efficient JSON parsing and generation, ensuring the menu data is handled reliably.
 
 ---
 

@@ -1,6 +1,6 @@
 # Restaurant Bot
 
-Restaurant Bot is an innovative tool designed to generate dynamic, balanced menus based on user preferences. Leveraging robust object-oriented programming techniques and the RapidJSON library, this project ensures flexibility, extensibility, and efficient data handling.
+Restaurant Bot is an innovative tool designed to generate dynamic, balanced menus based on user preferences. Leveraging robust object-oriented programming techniques and the json.hpp, this project ensures flexibility, extensibility, and efficient data handling.
 
 ---
 
